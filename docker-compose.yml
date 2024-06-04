@@ -4,6 +4,8 @@ services:
     image: louislam/uptime-kuma:1
     container_name: uptime-kuma
     restart: always
+    environment:
+      TZ: 'Asia/Bangkok'
     ports:
       - "3001:3001"
     volumes:
